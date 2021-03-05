@@ -1,0 +1,45 @@
+---
+title: "Probando"
+author: "José María Arrieta Reyes"
+date: "24/2/2021"
+output:
+  pdf_document:
+    keep_tex: yes
+  html_document:
+    df_print: paged
+---
+
+
+## Own Markdown 
+La ecuación $\sqrt{2}-e^{-2}$:
+```{r fisrtChunk}
+sqrt(5) - exp(-2)
+```
+
+```{r anotherChunk, echo=FALSE}
+  print("Hello")
+```
+
+```{r magic,message=FALSE,echo=FALSE,eval=TRUE}
+library(magic)
+magic(6)
+```
+
+Cuando queremos hacer la raíz cuadrada de dos, podemos hacerlo:
+
+* En LaTex :$\sqrt{2}$
+* En `R` haciendo `r sqrt(2)`
+* La frase completa $\sqrt{2}=$ `r sqrt(2)`
+
+
+
+
+
+
+
+
+
+
+
+
+

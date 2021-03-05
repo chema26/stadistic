@@ -1,0 +1,73 @@
+---
+title: "documentation"
+author: "José María Arrieta Reyes"
+date: "25/2/2021"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Documentation about R Markdown
+
+Un texto plano :V, `R` es bueno. \LaTeX
+
+Superíndices: un curso por nota^2^.
+Chema^estudiante^ ...
+
+Doble tilde. ~~Hola saludos~~
+
+Consulta a la página de [Google](https:www.google.com)
+
+endash: -- Guión corto: ...
+
+emdash: ... --- Guión Largo.
+
+elipsis: ...
+
+ecuaciones en linea: $S = \pi\cdot r^2$
+
+### Agregar imagenes
+
+imagen ![](../img/toon.jpg)
+
+
+***
+
+Barra divisoria
+
+> Una cita bibliográfica ?
+
+### Lista desordenada
+
+* Uno 
+* Dos 
+    + Sub dos unot 
+    + sub dos 2 
+* tres
+* etc
+
+### lista ordenada
+
+1. Uno 
+2. Dos 
+    + Sub dos uno
+    + Sub dos dos
+3. Tres
+4. etc
+
+
+
+### Tablas
+
+
+
+Alumno      |   Nota     |
+------------|------------
+Joey        | 5.6
+Seto Kaiba  | 9
+Yugi        | 8
+Tea         | 10 

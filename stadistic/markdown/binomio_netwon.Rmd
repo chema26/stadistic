@@ -1,0 +1,41 @@
+---
+title: "Binomio de Netwon"
+author: "José María Arrieta Reyes"
+date: "26/2/2021"
+output: html_document
+---
+
+# Binomio de Netwon
+
+## Producto Notable
+
+La fórmula del producto es:
+
+$$(a+b)^2 = a^2 + 2ab + b^2$$
+
+### Function with R
+
+```{r}
+prodNotable = function(a,b){
+  a^2 + (2*a*b) + b^2
+}
+prodNotable(1,2)
+```
+
+
+## Binomio de Newton
+
+$$(a+b)^n = \sum_{k=0}^n {n\choose k}\cdot a^{n-k}\cdot b^k = {n\choose 0}*a^n*b^0+\cdots {n\choose n}*a^0*b^n$$
+
+### Function
+
+```{r}
+binomioNewton = function(a,b,n){
+  cumsum(choose(n,(0:n))*a^{n-(0:n)}*b^(0:n))[n+1]
+}
+binomioNewton(2,1,2)
+```
+
+
+
+
